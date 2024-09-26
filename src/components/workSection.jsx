@@ -9,6 +9,7 @@ const WorkSection = () => {
           <h2 className="mb-4 font-sans text-2xl font-bold text-transparent leading-1 md:text-5xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
             <a
               href="https://www.kupujauto.sk/"
+              target="_blank"
               className="hover:bg-clip-text hover:bg-no-repeat hover:text-transparent hover:bg-gradient-to-r  hover:from-purple-500 hover:via-violet-500 hover:to-pink-500 hover:[text-shadow:0_0_rgba(0,0,0,0.1)]"
             >
               kupujauto.sk
@@ -53,6 +54,7 @@ const WorkSection = () => {
           <h2 className="mb-4 font-sans text-2xl font-bold text-transparent leading-1 md:text-5xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
             <a
               href="https://www.nelaprovazi.cz/"
+              target="_blank"
               className="hover:bg-clip-text hover:bg-no-repeat hover:text-transparent hover:bg-gradient-to-r  hover:from-purple-500 hover:via-violet-500 hover:to-pink-500 hover:[text-shadow:0_0_rgba(0,0,0,0.1)]"
             >
               nelaprovazi.cz
