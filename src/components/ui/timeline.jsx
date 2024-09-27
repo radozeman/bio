@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -24,14 +25,18 @@ export const Timeline = ({ data }) => {
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
-      <h2 className="pl-20 pr-4 font-sans text-2xl font-bold text-transparent md:text-5xl bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 md:pl-4 text-start">
-        Pracovné skúsenosti
+      <h2 className="mb-8 pl-20 font-sans text-xl font-bold text-transparent leading-1 md:text-2xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
+        <span className="bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r  from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+          Pracovné skúsenosti
+        </span>
       </h2>
       <div ref={ref} className="relative pb-20 mx-auto max-w-7xl">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-5 md:pt-20 md:gap-5"
+            className={cn("flex justify-start pt-5 md:pt-20 md:gap-5", {
+              "md:pt-0": index === 0,
+            })}
           >
             <div className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full">
               <div className="absolute flex items-center justify-center w-10 h-10 bg-white rounded-full left-3 md:left-3 dark:bg-black">
