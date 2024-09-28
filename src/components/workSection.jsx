@@ -10,7 +10,7 @@ const WorkSection = () => {
             <a
               href="https://www.kupujauto.sk/"
               target="_blank"
-              className="hover:bg-clip-text hover:bg-no-repeat hover:text-transparent hover:bg-gradient-to-r  hover:from-purple-500 hover:via-violet-500 hover:to-pink-500 hover:[text-shadow:0_0_rgba(0,0,0,0.1)]"
+              className="hover:bg-clip-text hover:bg-no-repeat hover:text-transparent transition-all hover:bg-gradient-to-r  hover:from-purple-500 hover:via-violet-500 hover:to-pink-500 hover:[text-shadow:0_0_rgba(0,0,0,0.1)]"
             >
               kupujauto.sk
             </a>
@@ -55,7 +55,7 @@ const WorkSection = () => {
             <a
               href="https://www.nelaprovazi.cz/"
               target="_blank"
-              className="hover:bg-clip-text hover:bg-no-repeat hover:text-transparent hover:bg-gradient-to-r  hover:from-purple-500 hover:via-violet-500 hover:to-pink-500 hover:[text-shadow:0_0_rgba(0,0,0,0.1)]"
+              className="hover:bg-clip-text hover:bg-no-repeat hover:text-transparent transition-all hover:bg-gradient-to-r  hover:from-purple-500 hover:via-violet-500 hover:to-pink-500 hover:[text-shadow:0_0_rgba(0,0,0,0.1)]"
             >
               nelaprovazi.cz
             </a>
