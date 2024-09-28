@@ -41,7 +41,7 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
         className="relative flex p-1 mx-auto border-2 rounded-full w-fit bg-background"
       >
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={(e) => onNavClick(e, "work")}>
+          <button type="button" onClick={() => onNavClick("work")}>
             <span className="hidden md:block">
               {locale ? "Work experience" : "pracovné skúsenosti"}
             </span>
@@ -49,12 +49,12 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
           </button>
         </NavItem>
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={(e) => onNavClick(e, "education")}>
+          <button type="button" onClick={() => onNavClick("education")}>
             {locale ? "Education" : "Vzdelanie"}
           </button>
         </NavItem>
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={(e) => onNavClick(e, "about")}>
+          <button type="button" onClick={() => onNavClick("about")}>
             {locale ? "About me" : "O mne"}
           </button>
         </NavItem>

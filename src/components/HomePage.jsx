@@ -11,27 +11,21 @@ export default function HomePage() {
   const educationRef = useRef(null);
   const aboutRef = useRef(null);
 
-  const handleSectionScroll = (e, section) => {
+  const handleSectionScroll = (section) => {
     switch (section) {
       case "work":
         if (!workRef?.current) return;
-        e.preventDefault();
         workRef.current?.scrollIntoView({
-          block: "nearest",
           behavior: "smooth",
         });
       case "education":
         if (!educationRef?.current) return;
-        e.preventDefault();
         workRef.current?.scrollIntoView({
-          block: "nearest",
           behavior: "smooth",
         });
       case "about":
         if (!aboutRef?.current) return;
-        e.preventDefault();
         workRef.current?.scrollIntoView({
-          block: "nearest",
           behavior: "smooth",
         });
     }
