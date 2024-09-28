@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
-export const Timeline = ({ data }) => {
+export const Timeline = ({ data, heading }) => {
   const ref = useRef(null);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
@@ -27,10 +27,10 @@ export const Timeline = ({ data }) => {
     <div className="w-full font-sans md:px-10" ref={containerRef}>
       <h2 className="mb-0 md:mb-8 pl-20 font-sans text-xl font-bold text-transparent leading-1 md:text-2xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
         <span className="bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r  from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
-          Pracovné skúsenosti
+          {heading}
         </span>
       </h2>
-      <div ref={ref} className="relative pb-20 mx-auto max-w-7xl">
+      <div ref={ref} className="relative mx-auto pb-28 max-w-7xl">
         {data.map((item, index) => (
           <div
             key={index}

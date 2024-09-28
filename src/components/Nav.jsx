@@ -24,7 +24,7 @@ const NavItem = ({ children, setPosition }) => {
   );
 };
 
-const Nav = () => {
+const Nav = ({ locale, setLocale, onNavClick }) => {
   const [position, setPosition] = useState({
     left: 0,
     width: 0,
@@ -41,11 +41,28 @@ const Nav = () => {
         className="relative flex p-1 mx-auto border-2 rounded-full w-fit bg-background"
       >
         <NavItem setPosition={setPosition}>
-          <span className="hidden md:block">pracovné skúsenosti</span>
-          <span className="md:hidden">práca</span>
+          <button type="button" onClick={() => onNavClick("work")}>
+            <span className="hidden md:block">
+              {locale ? "Work experience" : "pracovné skúsenosti"}
+            </span>
+            <span className="md:hidden"> {locale ? "Work" : "Práca"}</span>
+          </button>
         </NavItem>
-        <NavItem setPosition={setPosition}>vzdelanie</NavItem>
-        <NavItem setPosition={setPosition}>o mne</NavItem>
+        <NavItem setPosition={setPosition}>
+          <button type="button" onClick={() => onNavClick("education")}>
+            {locale ? "Education" : "Vzdelanie"}
+          </button>
+        </NavItem>
+        <NavItem setPosition={setPosition}>
+          <button type="button" onClick={() => onNavClick("about")}>
+            {locale ? "About me" : "O mne"}
+          </button>
+        </NavItem>
+        <NavItem setPosition={setPosition}>
+          <button type="button" onClick={() => setLocale((prev) => !prev)}>
+            {locale ? "SK" : "EN"}
+          </button>
+        </NavItem>
         <Cursor position={position} />
       </ul>
     </BackgroundGradient>
