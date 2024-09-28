@@ -6,6 +6,7 @@ const Header = () => {
       {/* <h1 className="font-sans text-3xl font-bold text-transparent md:text-7xl bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600">
         Radovan Zeman
       </h1> */}
+
       <p className="text-sm">
         <a
           href="https://github.com/radozeman"
