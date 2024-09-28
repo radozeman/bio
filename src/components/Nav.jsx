@@ -31,7 +31,7 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
     opacity: 0,
   });
   return (
-    <BackgroundGradient className="p-0.5 rounded-full ">
+    <BackgroundGradient className="p-0.5 rounded-3xl">
       <ul
         onMouseLeave={() => {
           setPosition((prev) => {
@@ -41,7 +41,7 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
         className="relative flex p-1 mx-auto border-2 rounded-full w-fit bg-background"
       >
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={() => onNavClick("work")}>
+          <button type="button" onClick={(e) => onNavClick(e, "work")}>
             <span className="hidden md:block">
               {locale ? "Work experience" : "pracovné skúsenosti"}
             </span>
@@ -49,12 +49,12 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
           </button>
         </NavItem>
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={() => onNavClick("education")}>
+          <button type="button" onClick={(e) => onNavClick(e, "education")}>
             {locale ? "Education" : "Vzdelanie"}
           </button>
         </NavItem>
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={() => onNavClick("about")}>
+          <button type="button" onClick={(e) => onNavClick(e, "about")}>
             {locale ? "About me" : "O mne"}
           </button>
         </NavItem>
