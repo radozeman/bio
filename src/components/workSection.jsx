@@ -6,7 +6,7 @@ const WorkSection = () => {
       title: "2024",
       content: (
         <div>
-          <h2 className="mb-4 font-sans text-2xl font-bold text-transparent leading-1 md:text-5xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
+          <h2 className="mb-2 md:mb-4 font-sans text-2xl font-bold text-transparent leading-1 md:text-5xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
             <a
               href="https://www.kupujauto.sk/"
               target="_blank"
@@ -19,7 +19,7 @@ const WorkSection = () => {
           <p className="mb-4 text-start">
             React.js | Next.js | Supabase | Postgres | TailwindCSS
           </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 dark:text-neutral-200 md:text-sm text-start">
+          <p className="mb-8 text-base font-normal text-neutral-800 dark:text-neutral-200 md:text-sm text-start">
             Autobazár s administrátorským rozhraním pre vytváranie, upravovanie
             a mazanie inzerátov.
           </p>
@@ -39,7 +39,7 @@ const WorkSection = () => {
           <p className="mb-4 text-start">
             React.js | Next.js | RHF | Redux | SWR | React Select | TailwindCSS
           </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 dark:text-neutral-200 md:text-sm text-start">
+          <p className="mb-8 text-base font-normal text-neutral-800 dark:text-neutral-200 md:text-sm text-start">
             Vývoj CRM systému pre organizátorov podujatí, zobrazovanie dát,
             možnosť odosielať hromadné a plánované e-maily, push notifikácie do
             appiek + UI na vytváranie šablón pre tieto e-maily a pushky.
@@ -74,7 +74,7 @@ const WorkSection = () => {
           <h2 className="mb-4 font-sans text-2xl font-bold text-transparent leading-1 md:text-5xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start">
             SK-ING a.s. - Údržbár
           </h2>
-          <p className="mb-8 text-xs font-normal text-neutral-800 dark:text-neutral-200 md:text-sm text-start">
+          <p className="mb-8 text-base font-normal text-neutral-800 dark:text-neutral-200 md:text-sm text-start">
             Opravy elektrických a vodoinštalačných porúch. V tejto práci som sa
             naučil komunikovať so zákazníkmi a externými spoločnosťami, ako aj
             plánovať každodenné pracovné úlohy.

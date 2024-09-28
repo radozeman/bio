@@ -25,7 +25,7 @@ export const Timeline = ({ data }) => {
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
-      <h2 className="mb-8 pl-20 font-sans text-xl font-bold text-transparent leading-1 md:text-2xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
+      <h2 className="mb-0 md:mb-8 pl-20 font-sans text-xl font-bold text-transparent leading-1 md:text-2xl/[55px] bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 text-start hover:bg-clip-text ">
         <span className="bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r  from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
           Pracovné skúsenosti
         </span>
@@ -48,10 +48,10 @@ export const Timeline = ({ data }) => {
             </div>
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <h3 className="block mb-4 text-2xl font-bold text-left md:hidden text-neutral-500 dark:text-neutral-500">
+              <h3 className="block text-2xl font-bold text-left md:mb-4 md:hidden text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
-              {item.content}{" "}
+              {item.content}
             </div>
           </div>
         ))}

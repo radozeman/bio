@@ -31,7 +31,7 @@ const Nav = () => {
     opacity: 0,
   });
   return (
-    <BackgroundGradient className="p-1 rounded-full">
+    <BackgroundGradient className="p-0.5 rounded-full ">
       <ul
         onMouseLeave={() => {
           setPosition((prev) => {
