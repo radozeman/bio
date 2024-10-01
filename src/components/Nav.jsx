@@ -24,7 +24,13 @@ const NavItem = ({ children, setPosition }) => {
   );
 };
 
-const Nav = ({ locale, setLocale, onNavClick }) => {
+const Nav = ({
+  locale,
+  setLocale,
+  onWorkClick,
+  onEducationClick,
+  onAboutClick,
+}) => {
   const [position, setPosition] = useState({
     left: 0,
     width: 0,
@@ -41,7 +47,7 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
         className="relative flex p-1 mx-auto border-2 rounded-full w-fit bg-background"
       >
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={() => onNavClick("work")}>
+          <button type="button" onClick={() => onWorkClick()}>
             <span className="hidden md:block">
               {locale ? "Work experience" : "pracovné skúsenosti"}
             </span>
@@ -49,12 +55,12 @@ const Nav = ({ locale, setLocale, onNavClick }) => {
           </button>
         </NavItem>
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={() => onNavClick("education")}>
+          <button type="button" onClick={() => onEducationClick()}>
             {locale ? "Education" : "Vzdelanie"}
           </button>
         </NavItem>
         <NavItem setPosition={setPosition}>
-          <button type="button" onClick={() => onNavClick("about")}>
+          <button type="button" onClick={() => onAboutClick()}>
             {locale ? "About me" : "O mne"}
           </button>
         </NavItem>

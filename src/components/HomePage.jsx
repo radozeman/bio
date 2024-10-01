@@ -11,24 +11,22 @@ export default function HomePage() {
   const educationRef = useRef(null);
   const aboutRef = useRef(null);
 
-  const handleSectionScroll = (section) => {
-    switch (section) {
-      case "work":
-        if (!workRef?.current) return;
-        workRef.current?.scrollIntoView({
-          behavior: "smooth",
-        });
-      case "education":
-        if (!educationRef?.current) return;
-        workRef.current?.scrollIntoView({
-          behavior: "smooth",
-        });
-      case "about":
-        if (!aboutRef?.current) return;
-        workRef.current?.scrollIntoView({
-          behavior: "smooth",
-        });
-    }
+  const handleWorkScroll = () => {
+    workRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const handleEducationScroll = () => {
+    educationRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const handleAboutScroll = () => {
+    aboutRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -37,7 +35,9 @@ export default function HomePage() {
         <Nav
           locale={locale}
           setLocale={setLocale}
-          onNavClick={handleSectionScroll}
+          onWorkClick={handleWorkScroll}
+          onEducationClick={handleEducationScroll}
+          onAboutClick={handleAboutScroll}
         />
       </div>
       <Header />
